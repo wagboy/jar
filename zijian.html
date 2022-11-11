@@ -1,0 +1,114 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>黔行视界</title>
+	<link rel="stylesheet" href="/css/index.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<style>
+		body {
+			background: black;
+		}
+		
+		img.wx_tip {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.download_content .btn.android3 {
+			margin: 20px auto 40px;
+		}
+		
+		.container {
+			padding: 50px 0 200px;
+		}
+		
+		.c1 {
+			background-image: none;
+			background-color: #f5f5f5;
+		}
+	</style>
+
+	<script>
+		function is_weixin() {
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function loadHtml(){
+	var div = document.createElement('div');
+	div.id = 'weixin-tip';
+	div.innerHTML = '<p><img class="wx_tip" src="https://storage.googleapis.com/ij-cloud/official/live_weixin.png" alt="微信打开"/></p>';
+	document.body.appendChild(div);
+}
+
+function loadStyleText() {
+	var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+	var style = document.createElement('style');
+	style.rel = 'stylesheet';
+	style.type = 'text/css';
+	try {
+		style.appendChild(document.createTextNode(cssText));
+	} catch (e) {
+		style.styleSheet.cssText = cssText; //ie9以下
+	}
+	var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+	head.appendChild(style); 
+}
+
+	</script>
+
+</head>
+
+<body ontouchend="" ontouchstart="">
+	<div class="mcont">
+		<div class="container c1">
+			<div class="content">
+				<div class="right">
+					<div class="logodis">
+						<img class="logo_img" id="6" src="http://52bsj.vip:81/api/v3/file/get/62098/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png?sign=isX-zHNEmbuO2lXzS9s7h-KKJ--_yumCGsZ4O3ocEQ4%3D%3A0"
+							alt="lululogo" />
+						<div class="logotxt">
+							黔行视界
+						</div>
+					</div>
+					<div class="download_content" style="position:relative">
+						<a style="background:#000" class="btn android3" href="javascript:;" data-clipboard-text="DY_UKLJ7#official#qrcode"><i class="icon android"></i> Android下载<i class="icon shiliang"></i></a>
+						<textarea id="bar2" readonly="" style="position:absolute;bottom:0;left:-9rem;opacity:0;width:100px;height:200px;z-index:999"> abcdefg </textarea>
+					</div>
+					<p class="mrt30 font1 txtl"> 安装使用说明（请务必认真读完）</p>
+					<p class="font1 txtl"> 🔹免费的影视点播🎬,卫星直播📺软件</p>
+					<p class="font1 txtl"> 🔹内容包含教育(小学👶,初中👦,高中🧔)资源,山歌👴,歌曲🎶，电视剧🎥，电影🎬等。</p>
+					<p class="font1 txtl"> 歌曲🎶，电视剧🎥，电影🎬等。</p>
+					<p class="font1 txtl"> 🔹所有资源都是免费的,不要❌vip,不充值，定期维护。</p>
+					<p class="font1 txtl"> 🔹使用要求:安卓系统(手机📱,电视,平板,机顶盒)。</p>
+					<p class="font1 txtl"> 🔹使用方法：1️⃣安装好后，打开软件2️⃣点击 👉 主页 👈3️⃣切换线路（推荐使用酷世界或77</p>
+					<p class="font1 txtl">4️⃣点击👉电影👈或👉电视👈分类5️⃣卫星直播点击👉直播👈。注意：为了方便使用，请根据如下操作</p>
+					<p class="font1 txtl">卫星直播界面，长按屏幕右上角（电视按遥控器菜单），显示菜单，点击偏好设置，把换台反转和跨选分类点上</p>
+					<p class="font1 txtl">⚠️⚠️⚠️本软件由🦸大神提供的开源软件修改而来，软件不生产、制作、存储任何内容，一切资源来源于网络，软件仅供学习</p>
+					<p class="font1 txtl"> ⛔禁止商用，⛔禁止传播，⛔禁止用于违法。请24小时内删除⚠️⚠️⚠️。 </p>
+				</div>
+			</div>
+			<div class="sky"></div>
+		</div>
+	</div>
+</body>
+<script>
+	document.getElementsByClassName("btn android3")[0].addEventListener("click", function(){
+	if (is_weixin()) {
+		loadHtml();
+		loadStyleText();
+	} else {
+		window.location.href = "http://52bsj.vip:81/api/v3/file/get/61893/qxsj11.10.apk?sign=unf15nBKBJn5K4NooSvCWFqdRtyrbBw9sun8WgtVGUQ%3D%3A0";
+	}
+});
+
+</script>
+
+</html>
